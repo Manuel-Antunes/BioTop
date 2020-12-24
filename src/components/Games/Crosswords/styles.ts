@@ -12,6 +12,7 @@ export const Row = styled.div`
   display:flex;
   list-style: none;
   li{ 
+    margin: 1rem;
     transition: all 0.2s;
     background-color:white;
     display:flex;
