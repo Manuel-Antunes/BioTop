@@ -3,7 +3,6 @@ import { toast } from 'react-toastify';
 
 import { Container, Row, List, Table, Found } from './styles';
 import Game from '../Game';
-import history from '../../../services/history';
 interface CrosswordsInterface extends Game {
     crosswords: Array<Array<String>>;
     answers: Array<String>
@@ -32,7 +31,7 @@ const Crosswords: React.FC<CrosswordsInterface> = ({ crosswords, answers, onEnd,
         }
     }, [rightAnswer, answers, onEnd])
     function restart() {
-        history.push('/');
+        window.location.href = '/';
     }
     async function handleRightAnswer(word: string) {
         setWord('')
