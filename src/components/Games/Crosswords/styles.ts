@@ -12,7 +12,7 @@ export const Row = styled.div`
   display:flex;
   list-style: none;
   li{ 
-    margin: 1rem;
+    margin: .5rem;
     transition: all 0.2s;
     background-color:white;
     display:flex;
@@ -21,13 +21,13 @@ export const Row = styled.div`
     border: solid 2px black;
     @media(max-width:720px){
       width: 2rem;
-    height: 2rem;
-    font-size: 1rem;
+      height: 2rem;
+      font-size: 1rem;
     }
 
-    width: 5rem;
-    height: 5rem;
-    font-size: 4rem;
+    width: 4rem;
+      height: 4rem;
+      font-size: 3rem;
     color: black;
     font-weight: bold;
     user-select: none;

@@ -51,7 +51,7 @@ const Crosswords: React.FC<CrosswordsInterface> = ({ crosswords, answers, onEnd,
 
     async function handleCross(e: React.MouseEvent<HTMLLIElement, MouseEvent>, go?: boolean) {
         const a = e.target as HTMLLIElement;
-        if (a.style.backgroundColor === 'green') {
+        if (a.style.backgroundColor !== 'green') {
             if (isHolding || go) {
                 if (clicked.indexOf(a) === -1) {
                     a.style.backgroundColor = "green"
